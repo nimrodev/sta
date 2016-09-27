@@ -168,7 +168,26 @@
                 
 	<!-- Footer Section -->
     <footer class="footer <?php echo ot_get_option('ut_footer_skin' , 'ut-footer-light'); ?>">        
+        <?php if ( get_theme_mod( 'ut_site_logo' ) ) : ?>
+            
+            <?php 
+            
+            $sitelogo = !is_front_page() && !is_home() && ( $active_page_hero == 'off' || empty( $active_page_hero ) ) ? ( get_theme_mod( 'ut_site_logo_alt' ) ? get_theme_mod( 'ut_site_logo_alt' ) : get_theme_mod( 'ut_site_logo' ) ) : get_theme_mod( 'ut_site_logo' );                        
+            
+            $alternate_logo = get_theme_mod( 'ut_site_logo_alt' ) ? get_theme_mod( 'ut_site_logo_alt' ) : get_theme_mod( 'ut_site_logo' ) ;?>
+            
+            <div class="site-logo">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img data-altlogo="<?php echo $alternate_logo; ?>" src="<?php echo $sitelogo; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+            </div>
+            
+        <?php else : ?>
         
+            <div class="site-logo">
+                <h1 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+            </div>
+            
+        <?php endif; ?>  
+
         <?php get_sidebar( 'footer' ); ?>                
         
         <?php if( ut_return_csection_config('ut_show_scroll_up_button' , 'on') == 'on' ) : ?>

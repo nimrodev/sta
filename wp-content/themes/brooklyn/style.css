@@ -846,10 +846,14 @@ li .gallery .gallery-item {
 .site-logo {
     color:#222222;
     display:table;
-	text-align:left;
 	margin:0;
-	height:80px;
-	position:relative;
+	position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 3000;
+    text-align: center;
+    background: black;
+    margin-bottom: 14px;
 }
 .ha-header.ha-transparent .site-logo .logo a,
 .ut-header-dark .site-logo .logo a {
@@ -866,6 +870,7 @@ li .gallery .gallery-item {
 .site-logo img {
 	max-height:60px;
 	vertical-align:middle;
+	width:50%;
 }
 .page-header, 
 .parallax-header, 
@@ -4408,6 +4413,9 @@ html {
     border:none;
     margin-left:0 !important;
     margin-right:0 !important;
+}
+.site-logo img{
+	width: 75%;
 }
 .ha-header.bordered-navigation, 
 .ha-header.bordered-navigation.ha-transparent {
