@@ -349,7 +349,6 @@ big {
 figure {
 	margin:0;
 }
-p, 
 pre, 
 ul, 
 ol, 
@@ -367,6 +366,14 @@ hr {
 	border:0;
 	height:1px;
 	margin-bottom:1.5em;
+}
+.diagonal_box{
+	padding-top: 50px !important;
+	padding-bottom: 20px !important;
+	-webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 60%) !important;
+}
+.heb{
+	direction: rtl;
 }
 
 /* Removing the dotted outline */
@@ -1592,7 +1599,7 @@ ul.ut-tablet li.show {
 #navigation ul li a {
 	white-space:nowrap;
 	padding-left:25px;
-	color: #555555;
+	color: #2a2a2a;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size:11px;
