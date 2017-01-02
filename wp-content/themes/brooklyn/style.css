@@ -369,13 +369,16 @@ hr {
 }
 .diagonal_box{
 	padding-top: 50px !important;
-	padding-bottom: 20px !important;
-	-webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 60%) !important;
+	padding-bottom: 50px !important;
+	-webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 50%) !important;
 }
 .heb{
 	direction: rtl;
 }
-
+.page-id-3089{
+	background-color: #464646;
+	/*padding-top: 40px;*/
+}
 /* Removing the dotted outline */
 
 object, embed {
@@ -877,7 +880,8 @@ li .gallery .gallery-item {
 .site-logo img {
 	max-height:60px;
 	vertical-align:middle;
-	width:50%;
+	width:31%;
+	margin-bottom: 2px;
 }
 .page-header, 
 .parallax-header, 
@@ -1961,12 +1965,12 @@ ul.ut-tablet li.show {
 }
 .ut-member-title {
 	display:block;
-	font-size:11px;
+	font-size:15px;
 	letter-spacing:0.5px;
 	line-height:150%;
 	text-transform:uppercase;
 	margin-top:5px;
-	margin-bottom:20px;
+	margin-bottom:0px;
 }
 .team-bio .member-box {
 	text-align:center;
@@ -1998,6 +2002,7 @@ ul.ut-tablet li.show {
 	position:absolute;
 	bottom:20px;
 	left:30px;
+	margin-top: 10px;
 }
 .member-social a {
 	text-align:center;
@@ -3010,7 +3015,7 @@ ul.sidebar, .widget-container ul {
 #contact-section ul,
 #contact-section ol {
 	text-transform:uppercase;
-	font-size:11px;
+	font-size:16px;
     list-style:outside;
     margin-left:15px;
 }
@@ -3386,7 +3391,7 @@ button, input[type="button"], input[type="submit"], .dark button, .dark input[ty
 	line-height: normal;
 	color: #FFFFFF;
 	padding:8px 12px;
-	font-size:11px;
+	font-size:16px;
 	text-transform:uppercase;
 	letter-spacing:0.5px;
 	text-align:center;
