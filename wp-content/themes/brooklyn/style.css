@@ -3044,10 +3044,12 @@ ul.sidebar, .widget-container ul {
 	color:#222222;
 }
 .wpcf7-not-valid-tip {
-	background:#222222 !important;
+	background:#ffc107 !important;
 	color:#FFF !important;
 	border:none !important;
 	padding-left:10px !important;
+	font-size: 14px !important;
+	padding-right: 10px !important;
 }
 .fa-ul li .fa {
 	line-height:inherit;
